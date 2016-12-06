@@ -3,10 +3,14 @@ using System;
 using System.Collections.Generic;
 using TEMPLATE.Objects;
 
-namespace  TEMPLATE
+namespace  AnimalShelter
 {
   public class TEMPLATE
   {
+    public AnimalTest()
+    {
+      DBConfiguration.ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=animalshelter_test;Integrated Security=SSPI;";
+    }
     [Fact]
     public void TEMPLATE_true()
     {

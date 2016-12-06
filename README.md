@@ -1,0 +1,11 @@
+This program will:
+-check for empty animal database
+-check for empty type-of-animal database
+-override for same animal description
+-override for same type-of-animal description
+-save animal object to database
+-save type-of-animal object to database
+-assign an id to animal Object
+-assign an id to type-of-animal Object
+-find animal in database
+-find type-of-animal in database
