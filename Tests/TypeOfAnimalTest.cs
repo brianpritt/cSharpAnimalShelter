@@ -1,23 +1,23 @@
-// using Xunit;
-// using System;
-// using System.Collections.Generic;
-// using TEMPLATE.Objects;
-//
-// namespace  AnimalShelter
-// {
-//   public class TEMPLATE
-//   {
-//     public TypeOfAnimalTest()
-//     {
-//       DBConfiguration.ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=animalshelter_test;Integrated Security=SSPI;";
-//     }
-//     [Fact]
-//     public void TEMPLATE_true()
-//     {
-//       //Arrange
-//       //Act
-//       //Assert
-//       Assert.Equal(true/false, TEMPLATE);
-//     }
-//   }
-// }
+using Xunit;
+using System;
+using System.Collections.Generic;
+
+
+namespace  AnimalShelter
+{
+  public class TypeOfAnimalTest
+  {
+    public TypeOfAnimalTest()
+    {
+      DBConfiguration.ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=animalshelter_test;Integrated Security=SSPI;";
+    }
+    [Fact]
+    public void Test_TypeOfAnimalEmptyAtFirst()
+    {
+      //arrange, Act
+      int result = TypeOfAnimal.GetAll().Count;
+      //Assert
+      Assert.Equal(0, result);
+    }
+  }
+}
